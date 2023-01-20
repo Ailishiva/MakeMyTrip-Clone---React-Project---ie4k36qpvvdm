@@ -1,0 +1,55 @@
+
+.cons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(37, 169, 230);
+}
+.container{
+    background-color: rgb(127, 32, 78);
+    width: 37%;
+    margin: 40px;
+}
+.text-center{
+    display: flex;
+    font-weight: 900;
+    font-size: x-large;
+    justify-content: center;
+    margin: 20px;
+}
+
+.inputform{
+    margin: 40px;
+}
+
+.mb-3{
+    margin: 10px;
+}
+
+.inp{
+    height: 44px;
+    width: 23rem;
+    border-radius: 10px;
+    border: none;
+}
+.buttons{
+    margin: auto;
+    margin-top: 6px;
+    background-image: linear-gradient(red, yellow, green);
+    padding: 8px;
+    border: none;
+    border-radius: 9px;
+    width: 92%;
+    font-weight: 800;
+    font-size: x-large;
+    font-family: ui-serif;
+    cursor: pointer;
+
+}
+
+.para{
+    margin: 45px;
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+}

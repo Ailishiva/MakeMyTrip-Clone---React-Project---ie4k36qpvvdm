@@ -1,0 +1,41 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.logo{
+    width: 130px;
+    height: 70px;
+}
+nav {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    background-color: black;
+    top: 0%;
+    z-index: 10;
+}
+main {
+        width: 48%;
+        display: flex;
+        justify-content: center;
+ }
+.header{
+    letter-spacing: 2px;
+    padding: 30px;
+    color: white;
+    font-weight: 900;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    cursor: pointer;
+ }
+
+
+.loginbtn{
+    width: 57px;
+    margin: 20px;
+    height: 30px;
+    border-radius: 14px;
+    cursor: pointer;
+}
