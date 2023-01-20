@@ -1,9 +1,15 @@
 import React from 'react'
 import "../styles/Home.css"
 import Flight from './flight'
+import Airplane from "../assects/airplane.jpg"
 // import axios from 'axios';
 function Home() {
-
+//  const box={
+//    container:{
+//     // backgroundColor: "red"
+//     // backgroundImage:  `url(${Airplane})`,
+//    }
+//  }
   
   return (
     <>
@@ -43,10 +49,13 @@ function Home() {
          </p>
 
         {/* second section */}
-         <h2>Avaliable Tickets</h2>
-        <div id='data'>
+         <h2>AVALIABLE FLIGHTS</h2>
+         
+        <div id='data' 
+        style={{backgroundColor:  `#87CEEB`}}
+        >
         <Flight/>
-    </div>
+        </div>
     </>
     
   )

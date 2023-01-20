@@ -3,8 +3,36 @@ import "../styles/Trains.css";
 import {TrainData} from './Traindata';
 import { useState } from 'react';
 import { useNavigate } from "react-router-dom";
+import Train from "../assects/travel.jpg"
 
 function Trains() {
+  const continr={
+    dtacontainer:{
+      color : `#fff`,
+      width: "52%",
+      margin: "20px",
+      backgroundImage:  `url(${Train})`,
+      width: `44%`,
+      marginLeft: "17rem",
+      padding:`40px`,
+      borderRadius:"20px",
+      letterSpacing:`1px`,
+    },
+    btn:{
+      width:`5vw`,
+      padding:`10px`,
+      fontWeight:`900`,
+      marginLeft:`4rem`,
+      borderRadius:"10px",
+      display: `flex`,
+      justifyContent: `center`,
+      cursor: `pointer`,
+      border: "none",
+    }
+
+    
+  }
+
     const [inputval, SetInputval] = useState({
               from:"",
               to:"",
@@ -147,16 +175,18 @@ n
 
 <div>
 {TrainData.map((item, id) =>(
-            <div key={id} style={{border : "1px solid", width: "40%",  margin: "20px"} }>
-            From<h3><span>{item.from}</span></h3>
-            
-            To<h3><span>{item.to}</span></h3>
-            Departure<h3><span>{item.departure.departureTime} | {item.departure.departureDate}</span></h3>
-            Price<h3><span>{item.price}</span></h3>
-            Duration<h3><span>{item.duration}</span></h3>
-            KiloMeters<h3><span>{item.kilometers}</span></h3>
-            TainNumber<h3><span>{item.train_number}</span></h3>
-            <button onClick={sendSubmit}>Book</button>
+            <div key={id} style= {continr.dtacontainer}>
+            <i className="fa fa-train" style={{fontSize:"48px",color:"white", display: "flex",
+              justifyContent: "center"}}></i>
+            <br></br>
+            From<h2><span>{item.from}</span></h2>
+            To<h2><span>{item.to}</span></h2>
+            Departure<h2><span>{item.departure.departureTime} | {item.departure.departureDate}</span></h2>
+            Price<h2><span>{item.price}</span></h2>
+            Duration<h2><span>{item.duration}</span></h2>
+            KiloMeters<h2><span>{item.kilometers}</span></h2>
+            TainNumber<h2><span>{item.train_number}</span></h2>
+            <button onClick={sendSubmit} style={continr.btn}>Book</button>
           </div>
 
 ))}
