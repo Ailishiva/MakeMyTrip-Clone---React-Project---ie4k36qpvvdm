@@ -14,7 +14,7 @@ function Checkoutpage() {
     },
     container:{
         display: "flex",
-        backgroundColor: "aliceblue",
+        marginTop: "4rem",
     },
     payment:{
         width: "40%",
@@ -112,7 +112,6 @@ const getData = (e) =>{
     }
 
   return (
-    <div style={style.contains}>
     <div style={style.container}>
        <div style={style.fareSummary}>
             <h3 style={style.header}>Fare Summary</h3>
@@ -147,7 +146,6 @@ const getData = (e) =>{
        </div>
          
        </div>
-    </div>
     </div>
   )
 }
