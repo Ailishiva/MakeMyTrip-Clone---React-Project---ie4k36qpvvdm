@@ -4,22 +4,23 @@
 }
 
 .form{
-    border: 1px solid;
     margin: 17px;
     background-color: aquamarine;
     padding: 30px;
     display: flex;
-    flex-direction:row;
-    justify-content: space-evenly;
+    /* flex-direction:row;
+    justify-content: space-evenly; */
     border-radius: 10px;
     /* width: 40%; */
 }
 
 
 
-.label {
-    display: flex;
-    flex-direction: column;
+label {
+    /* display: flex;
+    flex-direction: column; */
+    width: 29%;
+    margin-left: 12px;
 }
 input{
     height: 40px;

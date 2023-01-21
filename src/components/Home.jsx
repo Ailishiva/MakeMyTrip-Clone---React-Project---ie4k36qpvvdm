@@ -104,27 +104,27 @@ function Home() {
         </p>
         </div>
         <div className='form'>
-            <label htmlFor="form">
+            <label htmlFor="form" className='label'>
                 <span>FROM</span>
             <input id ="form" type="text" name='from'
             onChange={eventhandler}
             />
             </label>
 
-            <label htmlFor="form">
+            <label htmlFor="form" className='label'>
                 <span>TO</span>
                 <input id ="form" type="text" name='to'
                 onChange={eventhandler}
                 />
             </label>
 
-            <label htmlFor="form">
+            <label htmlFor="form" className='label'>
                 <span>DEPARTURE</span>
                 <input id ="form" type="date" name='depdate'
                 onChange={eventhandler}
                 />
             </label>
-            <label htmlFor="form">
+            <label htmlFor="form" className='label'>
                 <span>RETURN</span>
                 <input id ="form" type="date" name='retdate'
                 onChange={eventhandler}
