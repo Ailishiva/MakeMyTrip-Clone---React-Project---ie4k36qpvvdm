@@ -68,7 +68,7 @@ function Home() {
       backgroundImage:  `url(${Airplane})`,
       width: `48%`,
       marginLeft: "17rem",
-      padding:`40px`,
+      padding:`29px`,
       borderRadius:"20px",
       letterSpacing:`1px`,
     },

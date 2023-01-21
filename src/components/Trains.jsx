@@ -16,7 +16,7 @@ function Trains() {
       backgroundImage: `url(${Train})`,
       width: `44%`,
       marginLeft: "17rem",
-      padding: `40px`,
+      padding: `29px`,
       borderRadius: "20px",
       letterSpacing: `1px`,
     },
