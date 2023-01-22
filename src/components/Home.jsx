@@ -71,6 +71,21 @@ function Home() {
       padding:`29px`,
       borderRadius:"20px",
       letterSpacing:`1px`,
+
+    },
+    flex:{
+      display: "flex",
+      justifyContent: "space-between",
+      alignItems: "center",
+      textAlign: "center",
+      marginTop: "30px",
+  
+    },
+    duration:{
+      display: "flex",
+      flexDirection: "column",
+      textAlign: "center",
+
     },
     btn:{
       width:`5vw`,
@@ -148,17 +163,43 @@ function Home() {
       {val.map((item, i) => { 
         return (
             <div key={i} style={container.datacontainer}>
+            <div style={container.flex}>
             <i className="fa fa-plane" style={{fontSize:"48px", color: "#fff"}}></i>
-            <br></br>
-            From<h2><span>{item?.from}</span></h2>
-            To<h2><span>{item?.to}</span></h2>
-            Departure<h2><span>{item?.departure.departureTime} | {item?.departure.departureDate}</span></h2>
-            Return<h2><span>{item?.return.returnTime} | {item?.return.returnDate}</span></h2>
-           Price<h2><span>{item?.price}</span></h2>
-            Duration<h2><span>{item?.duration}</span></h2>
-           via<h2><span>{item?.via}</span></h2>
-           Airline<h2><span>{item?.airlineName}</span></h2>
-           <button style={container.btn} onClick={sendSubmit}>Book</button> 
+            <div>
+            <span>From</span>
+            <h2><span>{item.from}</span></h2>
+            </div>
+            <div>
+            <span>To</span>
+            <h2><span>{item?.to}</span></h2>
+            </div>
+            <div>
+            <span>Departure</span><h2><span>
+              {/* {item?.departure.departureTime} |  */}
+              {item.departure.departureDate}</span></h2>
+              </div>
+              <div>
+              <span>Return</span><h2><span>
+                {/* {item?.return.returnTime} |  */}
+                {item.return.returnDate}</span></h2>
+                </div>
+                <div>
+           <span>Price</span>
+           <h2><span>{item.price}</span></h2>
+           </div>
+            {/* Duration<h2><span>{item?.duration}</span></h2>
+           via<h2><span>{item?.via}</span></h2> */}
+           <div>
+           <span>Airline</span>
+           <h2><span>{item.airlineName}</span></h2>
+           </div>
+           </div>
+           <div style={container.duration}>
+            <p>Duration</p>
+            <h2><span>{item.duration}</span></h2>
+            </div>
+
+           <button style={container.btn} onClick={sendSubmit}>Book</button>
         </div>
           
   );
@@ -171,6 +212,5 @@ function Home() {
   
 }
 
-  
 
 export default Home
