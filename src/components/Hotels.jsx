@@ -24,15 +24,30 @@ function Hotels() {
     const continr={
         dtacontainer:{
           color : `#fff`,
-          width: "52%",
           margin: "20px",
           backgroundImage:  `url(${Hotel})`,
-          width: `48%`,
-          marginLeft: "17rem",
+          width: `65%`,
+          marginLeft: "16rem",
           padding:`26px`,
           borderRadius:"20px",
           letterSpacing:`1px`,
         },
+        flex:{
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "center",
+          textAlign: "center",
+          marginTop: "30px",
+    
+        },
+        room:{
+          display: "flex",
+          flexDirection: "column",
+          textAlign: "center",
+    
+        },
+    
+    
         btn:{
           width:`5vw`,
           padding:`10px`,
@@ -119,6 +134,7 @@ function Hotels() {
             <label htmlFor="form">
                 <span>CITY OR LOCATION</span>
             <input id ="form" type="text" name='city'
+            autoFocus
             onChange={eventhandler}
             />
             </label>
@@ -148,23 +164,45 @@ function Hotels() {
          </p>
 
         {/* second section */}
-         <h2>Avaliable Rooms</h2>
+         <h2>AVAILABLE ROOMS</h2>
+         <div id='data' 
+        style={{backgroundColor:  `#F1E5AC`}}
+        >
+
 
     <div>
       {val.map((item, i) => {
         return (
           <>
           <div key={i}  style={continr.dtacontainer}>
+            <div style={continr.flex}>
           <i className="fa fa-hotel" style={{fontSize:"48px",color:"white"}}></i>
-          <br></br>
-            City<h2><span>{item?.city}</span></h2>
-            HotelName<h2><span>{item?.hotel_name}</span></h2>
-            CheckIn<h2><span>{item?.check_in} </span></h2>
-            CheckOut<h2><span>{item?.check_out}</span></h2>
-            Guests<h2><span>{item?.guests}</span></h2>
-            PricePerNight<h2><span>{item?.price_per_night}</span></h2>
-            Rating<h2><span>{item?.rating}</span></h2>
-            RoomType<h2><span>{item?.room_type}</span></h2>
+          <div>
+            <span>City</span>
+            <h2><span>{item.city}</span></h2>
+          </div>
+          <div>
+            HotelName
+            <h2><span>{item.hotel_name}</span></h2>
+          </div>
+          <div>
+            CheckIn
+            <h2><span>{item.check_in} </span></h2>
+          </div>
+          <div>
+            CheckOut<h2><span>{item.check_out}</span></h2>
+          </div>
+          <div>
+            Guests<h2><span>{item.guests}</span></h2>
+          </div>
+          <div>
+            PricePerNight<h2><span>{item.price_per_night}</span></h2>
+          </div>
+          </div>
+
+            <div style={continr.room}>
+            RoomType<h2><span>{item.room_type}</span></h2>
+            </div>
             <button onClick={sendSubmit} style={continr.btn} >Book</button>
           </div>
           
@@ -172,7 +210,7 @@ function Hotels() {
         );
       })}
     </div>
-
+</div>
     </>
   )
 }

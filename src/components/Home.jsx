@@ -152,7 +152,7 @@ function Home() {
          </p>
 
         {/* second section */}
-         <h2>AVALIABLE FLIGHTS</h2>
+         <h2>AVAILABLE FLIGHTS</h2>
          
         <div id='data' 
         style={{backgroundColor:  `#87CEEB`}}
@@ -196,7 +196,7 @@ function Home() {
            </div>
            <div style={container.duration}>
             <p>Duration</p>
-            <h2><span>{item.duration}</span></h2>
+            <h2><span>---{item.duration}---</span></h2>
             </div>
 
            <button style={container.btn} onClick={sendSubmit}>Book</button>
