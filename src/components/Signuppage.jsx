@@ -4,7 +4,7 @@ import Button from 'react-bootstrap/Button';
 import { Link } from 'react-router-dom';
 import {  useNavigate } from 'react-router-dom';
 import "../styles/Signuppage.css"
-import background from "../assects/10998745.jpg"
+// import background from "../assects/10998745.jpg"
 
 
 const Signuppage = () =>{
