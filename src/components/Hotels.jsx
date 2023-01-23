@@ -134,7 +134,6 @@ function Hotels() {
             <label htmlFor="form">
                 <span>CITY OR LOCATION</span>
             <input id ="form" type="text" name='city'
-            autoFocus
             onChange={eventhandler}
             />
             </label>
