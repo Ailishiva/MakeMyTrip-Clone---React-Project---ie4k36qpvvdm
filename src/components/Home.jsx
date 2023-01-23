@@ -155,7 +155,6 @@ function Home() {
          <h2>AVAILABLE FLIGHTS</h2>
          
         <div id='data' 
-        style={{backgroundColor:  `#87CEEB`}}
         >
         {/* <Flight/> */}
           

@@ -26,9 +26,9 @@ function Hotels() {
           color : `#fff`,
           margin: "20px",
           backgroundImage:  `url(${Hotel})`,
-          width: `65%`,
-          marginLeft: "16rem",
-          padding:`26px`,
+          width: `79%`,
+          marginLeft: "8rem",
+          padding:`5px`,
           borderRadius:"20px",
           letterSpacing:`1px`,
         },
@@ -166,7 +166,6 @@ function Hotels() {
         {/* second section */}
          <h2>AVAILABLE ROOMS</h2>
          <div id='data' 
-        style={{backgroundColor:  `#F1E5AC`}}
         >
 
 

@@ -155,7 +155,7 @@ function Trains() {
         {/* second section */}   <h2>AVAILABLE TRAINS</h2>
         
 
-        <div         style={{backgroundColor:  `#90EE90`}}>
+        <div>
           {val.map((item, id) => 
           {
            return <div key={id} style={continr.dtacontainer}>
