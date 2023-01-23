@@ -60,9 +60,9 @@ const Signuppage = () =>{
                                           alert("password length should be greater than five");
                             }else{
                                           localStorage.setItem("userData",JSON.stringify([...data,inpval]));// inpval k andr hmne name email wgerah store kiya h
-                                          localStorage.setItem("username", ["name"]);
                                           alert('User successfully registered');
                                           historys("/Signin");
+                                        //  localStorage.setItem("username", ["name"]);
                             }
 
 
